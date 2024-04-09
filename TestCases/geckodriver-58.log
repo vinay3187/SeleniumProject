@@ -1,0 +1,20 @@
+1712382091205	geckodriver	INFO	Listening on 127.0.0.1:59585
+1712382094292	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59586" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Vinay\\AppData\\Local\\Temp\\rust_mozprofilemVzsMh"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1712382094829	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1712382094936	Marionette	INFO	Listening on port 59593
+WebDriver BiDi listening on ws://127.0.0.1:59586
+Read port: 59593
+1712382095105	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59586/devtools/browser/16f3e3f7-9f87-47e8-a105-b358cfdcf4d3
+JavaScript error: resource://gre/actors/SelectChild.sys.mjs, line 94: TypeError: this.element is null
+1712382124979	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+JavaScript error: resource://gre/actors/SelectChild.sys.mjs, line 94: TypeError: this.element is null
+JavaScript error: resource://gre/actors/SelectChild.sys.mjs, line 94: TypeError: this.element is null
+JavaScript error: resource://gre/actors/SelectChild.sys.mjs, line 94: TypeError: this.element is null
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1712387088785	Marionette	INFO	Stopped listening on port 59593
+Dynamically enable window occlusion 1

@@ -1,0 +1,16 @@
+1704280725232	geckodriver	INFO	Listening on 127.0.0.1:51219
+1704280728309	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51220" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Vinay\\AppData\\Local\\Temp\\rust_mozprofilez3fWjT"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1704280728781	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1704280728930	Marionette	INFO	Listening on port 51235
+WebDriver BiDi listening on ws://127.0.0.1:51220
+Read port: 51235
+1704280729169	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51220/devtools/browser/c88bba32-0af4-4024-a665-ee71e6af7393
+1704280760716	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.log: "RemoteSettingsWorker error: DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements."
+console.error: (new RemoteSettingsWorkerError("DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements.", "resource://services-settings/RemoteSettingsWorker.sys.mjs", 34))
+1704280824275	Marionette	INFO	Stopped listening on port 51235
+Dynamically enable window occlusion 1

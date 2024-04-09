@@ -1,0 +1,12 @@
+1705057367222	geckodriver	INFO	Listening on 127.0.0.1:54282
+1705057370290	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54283" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Vinay\\AppData\\Local\\Temp\\rust_mozprofilelN7i3j"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1705057370628	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1705057370766	Marionette	INFO	Listening on port 54290
+WebDriver BiDi listening on ws://127.0.0.1:54283
+Read port: 54290
+1705057370986	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54283/devtools/browser/8494dca3-5aef-493c-a74f-f258abef28b3
+1705057401537	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.

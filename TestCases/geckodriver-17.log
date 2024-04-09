@@ -1,0 +1,14 @@
+1704438547968	geckodriver	INFO	Listening on 127.0.0.1:53061
+1704438551047	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53062" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Vinay\\AppData\\Local\\Temp\\rust_mozprofilexkTZN4"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1704438551416	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1704438551543	Marionette	INFO	Listening on port 53076
+WebDriver BiDi listening on ws://127.0.0.1:53062
+Read port: 53076
+1704438551747	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53062/devtools/browser/32332005-d889-4644-ade7-2ef77317c50a
+1704438558916	Marionette	INFO	Stopped listening on port 53076
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/UrlClassifierListManager.sys.mjs, line 720: TypeError: this.tablesData[table] is undefined

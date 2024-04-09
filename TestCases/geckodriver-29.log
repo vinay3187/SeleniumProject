@@ -1,0 +1,17 @@
+1705056987643	geckodriver	INFO	Listening on 127.0.0.1:54137
+1705056990703	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54138" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Vinay\\AppData\\Local\\Temp\\rust_mozprofileyg5kTX"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1705056991282	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1705056991430	Marionette	INFO	Listening on port 54145
+WebDriver BiDi listening on ws://127.0.0.1:54138
+Read port: 54145
+1705056991620	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54138/devtools/browser/9fbe3104-d150-4919-aa3e-b4d18ef34f27
+1705057022238	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1705057461424	Marionette	INFO	Stopped listening on port 54145
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.error: "Failed to fetch https://spocs.getpocket.com/user:" "NetworkError when attempting to fetch resource."
+console.error: (new Error("Data is not ready.", "resource://gre/modules/JSONFile.sys.mjs", 178))

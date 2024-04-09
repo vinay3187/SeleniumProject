@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20240406 11:08:28.200" rpa="false" schemaversion="4">
+<suite id="s1" name="TC 001" source="C:\Users\Vinay\PycharmProjects\robot_project\TestCases\TC_001.robot">
+<test id="s1-t1" name="Robot First Test Case" line="13">
+<kw name="Start Browser and Maximise" library="Resources" type="SETUP">
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>These are keywords</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240406 11:08:28.478" level="INFO">Opening browser 'Firefox' to base url 'https://www.thetestingworld.com/testings/'.</msg>
+<msg timestamp="20240406 11:08:30.116" level="WARN">The geckodriver version (0.33.0) detected in PATH at C:\Users\Vinay\AppData\Local\Programs\Python\Python311\Scripts\geckodriver.exe might not be compatible with the detected firefox version (124.0.2.8857); currently, geckodriver 0.34.0 is recommended for firefox 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" starttime="20240406 11:08:28.478" endtime="20240406 11:08:41.596"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240406 11:08:41.596" endtime="20240406 11:08:41.612"/>
+</kw>
+<status status="PASS" starttime="20240406 11:08:28.477" endtime="20240406 11:08:41.616"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>fld_username</arg>
+<arg>Vinay</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240406 11:08:41.618" level="INFO">Typing text 'Vinay' into text field 'fld_username'.</msg>
+<status status="PASS" starttime="20240406 11:08:41.618" endtime="20240406 11:08:41.791"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>fld_email</arg>
+<arg>testworld@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240406 11:08:41.792" level="INFO">Typing text 'testworld@gmail.com' into text field 'fld_email'.</msg>
+<status status="PASS" starttime="20240406 11:08:41.792" endtime="20240406 11:08:41.839"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>fld_password</arg>
+<arg>123456</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240406 11:08:41.839" level="INFO">Typing text '123456' into text field 'fld_password'.</msg>
+<status status="PASS" starttime="20240406 11:08:41.839" endtime="20240406 11:08:41.872"/>
+</kw>
+<kw name="Close Browser Window" library="Resources" type="TEARDOWN">
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20240406 11:08:41.872" level="INFO">${title} = Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20240406 11:08:41.872" endtime="20240406 11:08:41.872"/>
+</kw>
+<kw name="Close Browser" library="Resources">
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20240406 11:08:41.872" level="INFO">${title} = Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20240406 11:08:41.872" endtime="20240406 11:08:41.872"/>
+</kw>
+<status status="PASS" starttime="20240406 11:08:41.872" endtime="20240406 11:08:41.872"/>
+</kw>
+<status status="PASS" starttime="20240406 11:08:41.872" endtime="20240406 11:08:41.872"/>
+</kw>
+<doc>This test case tests reg functionality</doc>
+<tag>Snake</tag>
+<status status="PASS" starttime="20240406 11:08:28.477" endtime="20240406 11:08:41.872"/>
+</test>
+<test id="s1-t2" name="Robot Second Test Case" line="22">
+<kw name="Start Browser and Maximise" library="Resources" type="SETUP">
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>These are keywords</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240406 11:08:41.884" level="INFO">Opening browser 'Firefox' to base url 'https://www.thetestingworld.com/testings/'.</msg>
+<msg timestamp="20240406 11:08:42.501" level="WARN">The geckodriver version (0.33.0) detected in PATH at C:\Users\Vinay\AppData\Local\Programs\Python\Python311\Scripts\geckodriver.exe might not be compatible with the detected firefox version (124.0.2.8857); currently, geckodriver 0.34.0 is recommended for firefox 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" starttime="20240406 11:08:41.884" endtime="20240406 11:08:51.823"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240406 11:08:51.823" endtime="20240406 11:08:51.832"/>
+</kw>
+<status status="PASS" starttime="20240406 11:08:41.884" endtime="20240406 11:08:51.832"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>add_type</arg>
+<arg>home</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20240406 11:08:51.832" level="INFO">Selecting 'home' from radio button 'add_type'.</msg>
+<status status="PASS" starttime="20240406 11:08:51.832" endtime="20240406 11:08:52.099"/>
+</kw>
+<kw name="Close Browser Window" library="Resources" type="TEARDOWN">
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20240406 11:08:52.107" level="INFO">${title} = Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20240406 11:08:52.101" endtime="20240406 11:08:52.107"/>
+</kw>
+<kw name="Close Browser" library="Resources">
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20240406 11:08:52.114" level="INFO">${title} = Login &amp; Sign Up Forms</msg>
+<status status="PASS" starttime="20240406 11:08:52.109" endtime="20240406 11:08:52.114"/>
+</kw>
+<status status="PASS" starttime="20240406 11:08:52.107" endtime="20240406 11:08:52.114"/>
+</kw>
+<status status="PASS" starttime="20240406 11:08:52.101" endtime="20240406 11:08:52.114"/>
+</kw>
+<tag>Smoke Sanity</tag>
+<status status="PASS" starttime="20240406 11:08:41.882" endtime="20240406 11:08:52.114"/>
+</test>
+<doc>This tests functionality</doc>
+<status status="PASS" starttime="20240406 11:08:28.202" endtime="20240406 11:08:52.114"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Smoke Sanity</stat>
+<stat pass="1" fail="0" skip="0">Snake</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="TC 001">TC 001</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240406 11:08:30.116" level="WARN">The geckodriver version (0.33.0) detected in PATH at C:\Users\Vinay\AppData\Local\Programs\Python\Python311\Scripts\geckodriver.exe might not be compatible with the detected firefox version (124.0.2.8857); currently, geckodriver 0.34.0 is recommended for firefox 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240406 11:08:42.501" level="WARN">The geckodriver version (0.33.0) detected in PATH at C:\Users\Vinay\AppData\Local\Programs\Python\Python311\Scripts\geckodriver.exe might not be compatible with the detected firefox version (124.0.2.8857); currently, geckodriver 0.34.0 is recommended for firefox 124.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

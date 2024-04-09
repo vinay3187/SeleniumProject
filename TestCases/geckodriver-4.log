@@ -1,0 +1,18 @@
+1704106221395	geckodriver	INFO	Listening on 127.0.0.1:50096
+1704106224459	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50097" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Vinay\\AppData\\Local\\Temp\\rust_mozprofileqXNLGj"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1704106224878	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1704106224997	Marionette	INFO	Listening on port 50104
+WebDriver BiDi listening on ws://127.0.0.1:50097
+Read port: 50104
+1704106225198	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50097/devtools/browser/7dc182b0-7911-46dc-8d51-377c823dedef
+1704106255167	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.log: "RemoteSettingsWorker error: DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements."
+console.error: (new RemoteSettingsWorkerError("DataError: IndexedDB: records, timestamps execute() Data provided to an operation does not meet requirements.", "resource://services-settings/RemoteSettingsWorker.sys.mjs", 34))
+1704106534144	Marionette	INFO	Stopped listening on port 50104
+Dynamically enable window occlusion 1
+JavaScript warning: https://www.google.com/js/th/sLx6qsRU46GEe0D3YqweyWcV0efz1f9DxDQkuEUxY-c.js line 2 > eval line 5369 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.google.com/js/th/sLx6qsRU46GEe0D3YqweyWcV0efz1f9DxDQkuEUxY-c.js line 2 > eval line 6910 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.

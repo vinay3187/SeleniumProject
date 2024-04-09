@@ -1,0 +1,17 @@
+1712566190652	geckodriver	INFO	Listening on 127.0.0.1:50526
+1712566193712	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50527" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Vinay\\AppData\\Local\\Temp\\rust_mozprofilebVpDAw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1712566194186	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1712566194304	Marionette	INFO	Listening on port 50534
+WebDriver BiDi listening on ws://127.0.0.1:50527
+Read port: 50534
+1712566194520	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50527/devtools/browser/2cb8337d-7cb7-4ecd-b458-e0ccce7da7cc
+1712566225144	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1712566232548	Marionette	INFO	Stopped listening on port 50534
+Dynamically enable window occlusion 1
+console.error: (new Error("IndexedDB: main/addons-manager-settings list() IndexedDB:  execute() The application is shutting down", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+console.warn: services.settings: main/query-stripping sync interrupted by shutdown
+console.error: (new Error("IndexedDB: main/ms-images getLastModified() IndexedDB:  execute() The application is shutting down", "resource://services-settings/IDBHelpers.sys.mjs", 16))

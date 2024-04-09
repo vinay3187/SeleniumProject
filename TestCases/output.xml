@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20240408 14:25:10.258" rpa="false" schemaversion="4">
+<suite id="s1" name="TC 001" source="C:\Users\Vinay\PycharmProjects\robot_project\TestCases\TC_001.robot">
+<test id="s1-t1" name="Robot Fetch Data" line="13">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${Url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240408 14:25:10.720" level="INFO">Opening browser 'Firefox' to base url 'https://www.thetestingworld.com/testings/'.</msg>
+<msg timestamp="20240408 14:25:11.147" level="WARN">The geckodriver version (0.33.0) detected in PATH at C:\Users\Vinay\AppData\Local\Programs\Python\Python311\Scripts\geckodriver.exe might not be compatible with the detected firefox version (124.0.2.8857); currently, geckodriver 0.34.0 is recommended for firefox 124.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" starttime="20240408 14:25:10.720" endtime="20240408 14:25:20.776"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240408 14:25:20.776" endtime="20240408 14:25:20.782"/>
+</kw>
+<kw name="Fetch No Of Rows" library="readdata">
+<var>${rows}</var>
+<arg>Sheet1</arg>
+<msg timestamp="20240408 14:25:20.785" level="INFO">${rows} = 4</msg>
+<status status="PASS" starttime="20240408 14:25:20.782" endtime="20240408 14:25:20.785"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>${rows}+1</value>
+<iter>
+<var name="${i}">1</var>
+<kw name="Read Excel data from cell" library="Resources">
+<var>${username}</var>
+<arg>Sheet1</arg>
+<arg>${i}</arg>
+<arg>1</arg>
+<kw name="Fetch Cell Data" library="readdata">
+<var>${data}</var>
+<arg>${Sheet}</arg>
+<arg>${rows}</arg>
+<arg>${cols}</arg>
+<msg timestamp="20240408 14:25:20.789" level="INFO">${data} = Username1</msg>
+<status status="PASS" starttime="20240408 14:25:20.789" endtime="20240408 14:25:20.789"/>
+</kw>
+<msg timestamp="20240408 14:25:20.789" level="INFO">${username} = Username1</msg>
+<status status="PASS" starttime="20240408 14:25:20.787" endtime="20240408 14:25:20.789"/>
+</kw>
+<kw name="Read Excel data from cell" library="Resources">
+<var>${password}</var>
+<arg>Sheet1</arg>
+<arg>${i}</arg>
+<arg>2</arg>
+<kw name="Fetch Cell Data" library="readdata">
+<var>${data}</var>
+<arg>${Sheet}</arg>
+<arg>${rows}</arg>
+<arg>${cols}</arg>
+<msg timestamp="20240408 14:25:20.791" level="INFO">${data} = Password1</msg>
+<status status="PASS" starttime="20240408 14:25:20.791" endtime="20240408 14:25:20.791"/>
+</kw>
+<msg timestamp="20240408 14:25:20.791" level="INFO">${password} = Password1</msg>
+<status status="PASS" starttime="20240408 14:25:20.789" endtime="20240408 14:25:20.791"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//label[text()='Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240408 14:25:20.791" level="INFO">Clicking element '//label[text()='Login']'.</msg>
+<status status="PASS" starttime="20240408 14:25:20.791" endtime="20240408 14:25:21.068"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='_txtUserName']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240408 14:25:21.073" level="INFO">Typing text 'Username1' into text field '//input[@name='_txtUserName']'.</msg>
+<status status="PASS" starttime="20240408 14:25:21.068" endtime="20240408 14:25:21.154"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='_txtPassword']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240408 14:25:21.154" level="INFO">Typing text 'Password1' into text field '//input[@name='_txtPassword']'.</msg>
+<status status="PASS" starttime="20240408 14:25:21.154" endtime="20240408 14:25:21.183"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@value='Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240408 14:25:21.183" level="INFO">Clicking element '//input[@value='Login']'.</msg>
+<status status="PASS" starttime="20240408 14:25:21.183" endtime="20240408 14:25:21.938"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240408 14:25:26.939" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240408 14:25:21.938" endtime="20240408 14:25:26.939"/>
+</kw>
+<status status="PASS" starttime="20240408 14:25:20.785" endtime="20240408 14:25:26.939"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Read Excel data from cell" library="Resources">
+<var>${username}</var>
+<arg>Sheet1</arg>
+<arg>${i}</arg>
+<arg>1</arg>
+<kw name="Fetch Cell Data" library="readdata">
+<var>${data}</var>
+<arg>${Sheet}</arg>
+<arg>${rows}</arg>
+<arg>${cols}</arg>
+<msg timestamp="20240408 14:25:26.939" level="INFO">${data} = Username2</msg>
+<status status="PASS" starttime="20240408 14:25:26.939" endtime="20240408 14:25:26.939"/>
+</kw>
+<msg timestamp="20240408 14:25:26.939" level="INFO">${username} = Username2</msg>
+<status status="PASS" starttime="20240408 14:25:26.939" endtime="20240408 14:25:26.939"/>
+</kw>
+<kw name="Read Excel data from cell" library="Resources">
+<var>${password}</var>
+<arg>Sheet1</arg>
+<arg>${i}</arg>
+<arg>2</arg>
+<kw name="Fetch Cell Data" library="readdata">
+<var>${data}</var>
+<arg>${Sheet}</arg>
+<arg>${rows}</arg>
+<arg>${cols}</arg>
+<msg timestamp="20240408 14:25:26.939" level="INFO">${data} = Password2</msg>
+<status status="PASS" starttime="20240408 14:25:26.939" endtime="20240408 14:25:26.939"/>
+</kw>
+<msg timestamp="20240408 14:25:26.939" level="INFO">${password} = Password2</msg>
+<status status="PASS" starttime="20240408 14:25:26.939" endtime="20240408 14:25:26.939"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//label[text()='Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240408 14:25:26.944" level="INFO">Clicking element '//label[text()='Login']'.</msg>
+<status status="PASS" starttime="20240408 14:25:26.939" endtime="20240408 14:25:27.183"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='_txtUserName']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240408 14:25:27.183" level="INFO">Typing text 'Username2' into text field '//input[@name='_txtUserName']'.</msg>
+<status status="PASS" starttime="20240408 14:25:27.183" endtime="20240408 14:25:27.267"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='_txtPassword']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240408 14:25:27.267" level="INFO">Typing text 'Password2' into text field '//input[@name='_txtPassword']'.</msg>
+<status status="PASS" starttime="20240408 14:25:27.267" endtime="20240408 14:25:27.335"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@value='Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240408 14:25:27.336" level="INFO">Clicking element '//input[@value='Login']'.</msg>
+<status status="PASS" starttime="20240408 14:25:27.335" endtime="20240408 14:25:28.016"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240408 14:25:33.017" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240408 14:25:28.016" endtime="20240408 14:25:33.017"/>
+</kw>
+<status status="PASS" starttime="20240408 14:25:26.939" endtime="20240408 14:25:33.017"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<kw name="Read Excel data from cell" library="Resources">
+<var>${username}</var>
+<arg>Sheet1</arg>
+<arg>${i}</arg>
+<arg>1</arg>
+<kw name="Fetch Cell Data" library="readdata">
+<var>${data}</var>
+<arg>${Sheet}</arg>
+<arg>${rows}</arg>
+<arg>${cols}</arg>
+<msg timestamp="20240408 14:25:33.018" level="INFO">${data} = Username3</msg>
+<status status="PASS" starttime="20240408 14:25:33.018" endtime="20240408 14:25:33.018"/>
+</kw>
+<msg timestamp="20240408 14:25:33.018" level="INFO">${username} = Username3</msg>
+<status status="PASS" starttime="20240408 14:25:33.017" endtime="20240408 14:25:33.018"/>
+</kw>
+<kw name="Read Excel data from cell" library="Resources">
+<var>${password}</var>
+<arg>Sheet1</arg>
+<arg>${i}</arg>
+<arg>2</arg>
+<kw name="Fetch Cell Data" library="readdata">
+<var>${data}</var>
+<arg>${Sheet}</arg>
+<arg>${rows}</arg>
+<arg>${cols}</arg>
+<msg timestamp="20240408 14:25:33.018" level="INFO">${data} = Password3</msg>
+<status status="PASS" starttime="20240408 14:25:33.018" endtime="20240408 14:25:33.018"/>
+</kw>
+<msg timestamp="20240408 14:25:33.018" level="INFO">${password} = Password3</msg>
+<status status="PASS" starttime="20240408 14:25:33.018" endtime="20240408 14:25:33.018"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//label[text()='Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240408 14:25:33.018" level="INFO">Clicking element '//label[text()='Login']'.</msg>
+<status status="PASS" starttime="20240408 14:25:33.018" endtime="20240408 14:25:33.257"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='_txtUserName']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240408 14:25:33.257" level="INFO">Typing text 'Username3' into text field '//input[@name='_txtUserName']'.</msg>
+<status status="PASS" starttime="20240408 14:25:33.257" endtime="20240408 14:25:33.322"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='_txtPassword']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240408 14:25:33.322" level="INFO">Typing text 'Password3' into text field '//input[@name='_txtPassword']'.</msg>
+<status status="PASS" starttime="20240408 14:25:33.322" endtime="20240408 14:25:33.380"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@value='Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240408 14:25:33.384" level="INFO">Clicking element '//input[@value='Login']'.</msg>
+<status status="PASS" starttime="20240408 14:25:33.380" endtime="20240408 14:25:34.102"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240408 14:25:39.102" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240408 14:25:34.102" endtime="20240408 14:25:39.102"/>
+</kw>
+<status status="PASS" starttime="20240408 14:25:33.017" endtime="20240408 14:25:39.102"/>
+</iter>
+<iter>
+<var name="${i}">4</var>
+<kw name="Read Excel data from cell" library="Resources">
+<var>${username}</var>
+<arg>Sheet1</arg>
+<arg>${i}</arg>
+<arg>1</arg>
+<kw name="Fetch Cell Data" library="readdata">
+<var>${data}</var>
+<arg>${Sheet}</arg>
+<arg>${rows}</arg>
+<arg>${cols}</arg>
+<msg timestamp="20240408 14:25:39.102" level="INFO">${data} = Username4</msg>
+<status status="PASS" starttime="20240408 14:25:39.102" endtime="20240408 14:25:39.102"/>
+</kw>
+<msg timestamp="20240408 14:25:39.102" level="INFO">${username} = Username4</msg>
+<status status="PASS" starttime="20240408 14:25:39.102" endtime="20240408 14:25:39.102"/>
+</kw>
+<kw name="Read Excel data from cell" library="Resources">
+<var>${password}</var>
+<arg>Sheet1</arg>
+<arg>${i}</arg>
+<arg>2</arg>
+<kw name="Fetch Cell Data" library="readdata">
+<var>${data}</var>
+<arg>${Sheet}</arg>
+<arg>${rows}</arg>
+<arg>${cols}</arg>
+<msg timestamp="20240408 14:25:39.102" level="INFO">${data} = Password4</msg>
+<status status="PASS" starttime="20240408 14:25:39.102" endtime="20240408 14:25:39.102"/>
+</kw>
+<msg timestamp="20240408 14:25:39.102" level="INFO">${password} = Password4</msg>
+<status status="PASS" starttime="20240408 14:25:39.102" endtime="20240408 14:25:39.102"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//label[text()='Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240408 14:25:39.102" level="INFO">Clicking element '//label[text()='Login']'.</msg>
+<status status="PASS" starttime="20240408 14:25:39.102" endtime="20240408 14:25:39.337"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='_txtUserName']</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240408 14:25:39.337" level="INFO">Typing text 'Username4' into text field '//input[@name='_txtUserName']'.</msg>
+<status status="PASS" starttime="20240408 14:25:39.337" endtime="20240408 14:25:39.397"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@name='_txtPassword']</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240408 14:25:39.399" level="INFO">Typing text 'Password4' into text field '//input[@name='_txtPassword']'.</msg>
+<status status="PASS" starttime="20240408 14:25:39.397" endtime="20240408 14:25:39.439"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@value='Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240408 14:25:39.439" level="INFO">Clicking element '//input[@value='Login']'.</msg>
+<status status="PASS" starttime="20240408 14:25:39.439" endtime="20240408 14:25:40.971"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240408 14:25:45.976" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240408 14:25:40.971" endtime="20240408 14:25:45.976"/>
+</kw>
+<status status="PASS" starttime="20240408 14:25:39.102" endtime="20240408 14:25:45.976"/>
+</iter>
+<status status="PASS" starttime="20240408 14:25:20.785" endtime="20240408 14:25:45.976"/>
+</for>
+<status status="PASS" starttime="20240408 14:25:10.719" endtime="20240408 14:25:45.976"/>
+</test>
+<status status="PASS" starttime="20240408 14:25:10.259" endtime="20240408 14:25:45.976"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC 001">TC 001</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240408 14:25:10.259" level="ERROR">Error in file 'C:\Users\Vinay\PycharmProjects\robot_project\TestCases\TC_001.robot' on line 29: Creating keyword 'Read Element Locator' failed: Invalid argument specification: Invalid argument syntax 'JsonPath'.</msg>
+<msg timestamp="20240408 14:25:10.718" level="ERROR">Error in file 'C:\Users\Vinay\PycharmProjects\robot_project\TestCases\TC_001.robot' on line 4: Library '..\..\External-Keywords\Locators.py' does not exist.</msg>
+<msg timestamp="20240408 14:25:11.147" level="WARN">The geckodriver version (0.33.0) detected in PATH at C:\Users\Vinay\AppData\Local\Programs\Python\Python311\Scripts\geckodriver.exe might not be compatible with the detected firefox version (124.0.2.8857); currently, geckodriver 0.34.0 is recommended for firefox 124.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
